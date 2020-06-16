@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 
-import Tech from "./libraries/Tech.js";
-import Header from "./libraries/Header.js";
-
-
 import './App.scss';
+
+import Header from "./layouts/Header";
+import Navbar from "./layouts/Navbar";
+import Profile from "./layouts/Profile";
 
 const App = () => {
     return (
-        <div>
-            <div><Header/></div>
-            <div><Tech/></div>
+        <div className='app-wrapper'>
+            <Header/>
+            <Navbar/>
+            <Profile/>
         </div>
-
     );
 
 }
